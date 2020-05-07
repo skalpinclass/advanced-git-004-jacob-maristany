@@ -21,8 +21,13 @@ namespace demo.test
             for(var i = 0; i < 1000; i++)
             {
                 var number = random.Next(0,1);
-                Assert.AreEqual(0, number);
+                if(number == 0)
+                {
+                    return;
+                }
             }
+
+            Assert.Fail();
         }
     }
 }
