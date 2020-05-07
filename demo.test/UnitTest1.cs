@@ -18,7 +18,7 @@ namespace demo.test
         [TestMethod]
         public void TestMethod1()
         {
-            for(var i = 0; i < 10; i++)
+            for(var i = 0; i < 1000; i++)
             {
                 var number = random.Next(0,1);
                 Assert.AreEqual(0, number);
